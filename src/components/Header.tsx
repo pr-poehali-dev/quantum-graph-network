@@ -9,7 +9,7 @@ export function Header() {
         <div className="flex h-20 items-center justify-between">
           {/* Logo */}
           <a href="/" className="font-serif text-2xl tracking-wide text-foreground">
-            Wabi
+            EdDiagnos
           </a>
 
           {/* Desktop Navigation */}
@@ -18,7 +18,7 @@ export function Header() {
               href="#philosophy"
               className="text-sm tracking-widest uppercase text-muted-foreground hover:text-foreground transition-colors duration-500"
             >
-              Философия
+              Об эксперте
             </a>
             <a
               href="#services"
@@ -30,13 +30,13 @@ export function Header() {
               href="#process"
               className="text-sm tracking-widest uppercase text-muted-foreground hover:text-foreground transition-colors duration-500"
             >
-              Процесс
+              Как это работает
             </a>
             <a
               href="#contact"
               className="text-sm tracking-widest uppercase text-muted-foreground hover:text-foreground transition-colors duration-500"
             >
-              Контакты
+              Записаться
             </a>
           </div>
 
@@ -68,7 +68,7 @@ export function Header() {
               onClick={() => setIsMenuOpen(false)}
               className="text-sm tracking-widest uppercase text-muted-foreground hover:text-foreground transition-colors"
             >
-              Философия
+              Об эксперте
             </a>
             <a
               href="#services"
@@ -82,14 +82,14 @@ export function Header() {
               onClick={() => setIsMenuOpen(false)}
               className="text-sm tracking-widest uppercase text-muted-foreground hover:text-foreground transition-colors"
             >
-              Процесс
+              Как это работает
             </a>
             <a
               href="#contact"
               onClick={() => setIsMenuOpen(false)}
               className="text-sm tracking-widest uppercase text-muted-foreground hover:text-foreground transition-colors"
             >
-              Контакты
+              Записаться
             </a>
           </div>
         </div>
