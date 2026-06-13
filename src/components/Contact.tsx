@@ -71,9 +71,7 @@ export function Contact() {
 
 
               <div>
-                <label htmlFor="message" className="block text-xs tracking-widest uppercase text-muted-foreground mb-3">
-                  Расскажите о курсе
-                </label>
+
                 <textarea
                   id="message"
                   value={formState.message}
