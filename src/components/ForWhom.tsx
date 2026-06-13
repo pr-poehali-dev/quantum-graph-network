@@ -75,14 +75,7 @@ export function ForWhom() {
           ))}
         </div>
 
-        {/* Bottom note */}
-        <p
-          className={`mt-16 text-sm text-muted-foreground transition-all duration-1000 delay-700 ${
-            isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
-          }`}
-        >
-          Вы присылаете программу, лендинг и 1–2 урока — подготовка занимает 15 минут.
-        </p>
+
       </div>
     </section>
   )
