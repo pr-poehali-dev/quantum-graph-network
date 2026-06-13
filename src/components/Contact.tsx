@@ -1,11 +1,7 @@
-import type React from "react"
 import { useEffect, useRef, useState } from "react"
 
 export function Contact() {
   const [isVisible, setIsVisible] = useState(false)
-  const [formState, setFormState] = useState({
-    message: "",
-  })
   const sectionRef = useRef<HTMLElement>(null)
 
   useEffect(() => {
@@ -24,11 +20,6 @@ export function Contact() {
 
     return () => observer.disconnect()
   }, [])
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault()
-    console.log(formState)
-  }
 
   return (
     <section ref={sectionRef} id="contact" className="py-32 lg:py-40 px-6 lg:px-12">
@@ -67,21 +58,7 @@ export function Contact() {
               isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
             }`}
           >
-            <form onSubmit={handleSubmit} className="space-y-8">
-
-
-              <div>
-
-                <textarea
-                  id="message"
-                  value={formState.message}
-                  onChange={(e) => setFormState({ ...formState, message: e.target.value })}
-                  rows={4}
-                  className="w-full bg-transparent border-b border-border py-3 text-foreground placeholder:text-muted-foreground/50 focus:border-sage focus:outline-none transition-colors resize-none"
-                  placeholder="Что за курс, в чём проблема, какой результат хотите получить..."
-                  required
-                />
-              </div>
+            <form className="space-y-8">
               <button
                 type="submit"
                 className="group inline-flex items-center gap-3 px-8 py-4 bg-sage text-primary-foreground text-sm tracking-widest uppercase hover:bg-sage/90 transition-all duration-500"
