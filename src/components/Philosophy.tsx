@@ -42,14 +42,14 @@ export function Philosophy() {
         </h2>
 
         <div
-          className={`space-y-6 text-muted-foreground leading-relaxed max-w-2xl mx-auto transition-all duration-1000 delay-500 ${
+          className={`space-y-6 text-muted-foreground leading-relaxed max-w-2xl mx-auto text-center transition-all duration-1000 delay-500 ${
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
           }`}
         >
           <p>6 лет в крупном EdTech — множество отсмотренных курсов, десятки точек потерь, которые повторяются снова и снова. 
 Знаю, где студенты уходят и почему продажи не растут.</p>
           <p>ChatGPT даст усреднённые советы. Я отдаю конкретный диагноз по вашим материалам:</p>
-          <ul className="space-y-2 list-none">
+          <ul className="space-y-2 list-none inline-block text-left">
             <li className="flex items-start gap-3"><span className="mt-2 w-1.5 h-1.5 rounded-full bg-terracotta shrink-0" />главная причина проблемы</li>
             <li className="flex items-start gap-3"><span className="mt-2 w-1.5 h-1.5 rounded-full bg-terracotta shrink-0" />3–5 исправлений по приоритетам</li>
             <li className="flex items-start gap-3"><span className="mt-2 w-1.5 h-1.5 rounded-full bg-terracotta shrink-0" />чёткий план — что чинить первым</li>
