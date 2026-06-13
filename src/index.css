@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&family=DM+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap&subset=cyrillic,cyrillic-ext,latin,latin-ext');
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&family=DM+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap&subset=cyrillic,cyrillic-ext,latin,latin-ext");
 
 @tailwind base;
 @tailwind components;
@@ -6,97 +6,102 @@
 
 @layer base {
   :root {
-    /* Japandi color palette - warm naturals with muted accents */
-    --background: 40 20% 96%;
-    --foreground: 30 15% 15%;
+    /* Purple palette: E0AAFF → 10002B */
+    --background: 270 100% 98%;
+    --foreground: 270 60% 8%;
 
-    --card: 40 15% 98%;
-    --card-foreground: 30 15% 15%;
+    --card: 270 60% 99%;
+    --card-foreground: 270 60% 8%;
 
-    --popover: 40 15% 98%;
-    --popover-foreground: 30 15% 15%;
+    --popover: 270 60% 99%;
+    --popover-foreground: 270 60% 8%;
 
-    --primary: 150 30% 25%;
-    --primary-foreground: 40 15% 98%;
+    --primary: 277 65% 58%;
+    --primary-foreground: 270 100% 98%;
 
-    --secondary: 40 15% 92%;
-    --secondary-foreground: 30 15% 15%;
+    --secondary: 270 60% 93%;
+    --secondary-foreground: 270 60% 8%;
 
-    --muted: 40 12% 90%;
-    --muted-foreground: 30 8% 45%;
+    --muted: 270 40% 90%;
+    --muted-foreground: 270 20% 40%;
 
-    --accent: 25 50% 55%;
-    --accent-foreground: 40 15% 98%;
+    --accent: 277 82% 59%;
+    --accent-foreground: 270 100% 98%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 40 15% 88%;
-    --input: 40 15% 88%;
-    --ring: 150 30% 25%;
+    --border: 270 40% 85%;
+    --input: 270 40% 85%;
+    --ring: 277 65% 58%;
 
     --radius: 0.25rem;
 
-    /* Custom Japandi tokens */
-    --sand: 40 20% 92%;
-    --sage: 150 30% 25%;
-    --terracotta: 25 50% 55%;
-    --indigo: 260 30% 35%;
-    --stone: 40 8% 70%;
+    /* Custom purple tokens */
+    /* sand = #E0AAFF очень светлый лавандовый */
+    --sand: 277 100% 83%;
+    /* sage = #7B2FBE — средний фиолетовый (кнопки, акценты) */
+    --sage: 277 60% 46%;
+    /* terracotta = #C77DFF — яркий лавандовый (overline) */
+    --terracotta: 277 100% 74%;
+    /* indigo = #3C096C */
+    --indigo: 277 82% 23%;
+    /* stone = #9D4EDD — средне-фиолетовый */
+    --stone: 277 65% 58%;
 
-    --sidebar-background: 0 0% 98%;
-    --sidebar-foreground: 240 5.3% 26.1%;
-    --sidebar-primary: 240 5.9% 10%;
-    --sidebar-primary-foreground: 0 0% 98%;
-    --sidebar-accent: 240 4.8% 95.9%;
-    --sidebar-accent-foreground: 240 5.9% 10%;
-    --sidebar-border: 220 13% 91%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --sidebar-background: 270 100% 98%;
+    --sidebar-foreground: 270 60% 8%;
+    --sidebar-primary: 277 65% 58%;
+    --sidebar-primary-foreground: 270 100% 98%;
+    --sidebar-accent: 270 60% 93%;
+    --sidebar-accent-foreground: 270 60% 8%;
+    --sidebar-border: 270 40% 85%;
+    --sidebar-ring: 277 65% 58%;
   }
 
   .dark {
-    --background: 30 15% 10%;
-    --foreground: 40 15% 92%;
+    --background: 270 82% 5%;
+    --foreground: 277 100% 83%;
 
-    --card: 30 15% 12%;
-    --card-foreground: 40 15% 92%;
+    --card: 270 75% 8%;
+    --card-foreground: 277 100% 83%;
 
-    --popover: 30 15% 12%;
-    --popover-foreground: 40 15% 92%;
+    --popover: 270 75% 8%;
+    --popover-foreground: 277 100% 83%;
 
-    --primary: 150 25% 45%;
-    --primary-foreground: 30 15% 10%;
+    --primary: 277 100% 74%;
+    --primary-foreground: 270 82% 5%;
 
-    --secondary: 30 12% 18%;
-    --secondary-foreground: 40 15% 92%;
+    --secondary: 270 60% 14%;
+    --secondary-foreground: 277 100% 83%;
 
-    --muted: 30 12% 18%;
-    --muted-foreground: 40 10% 65%;
+    --muted: 270 60% 14%;
+    --muted-foreground: 277 60% 70%;
 
-    --accent: 25 40% 45%;
-    --accent-foreground: 30 15% 10%;
+    --accent: 277 82% 59%;
+    --accent-foreground: 270 82% 5%;
 
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 30 12% 22%;
-    --input: 30 12% 22%;
-    --ring: 150 25% 45%;
+    --border: 270 50% 20%;
+    --input: 270 50% 20%;
+    --ring: 277 100% 74%;
 
-    --sand: 30 12% 22%;
-    --sage: 150 25% 45%;
-    --terracotta: 25 40% 45%;
-    --indigo: 260 25% 40%;
-    --stone: 30 8% 35%;
+    --sand: 270 50% 18%;
+    --sage: 277 100% 74%;
+    --terracotta: 277 100% 83%;
+    --indigo: 277 65% 58%;
+    --stone: 270 50% 30%;
 
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --sidebar-background: 270 82% 5%;
+    --sidebar-foreground: 277 100% 83%;
+    --sidebar-primary: 277 100% 74%;
+    --sidebar-primary-foreground: 270 82% 5%;
+    --sidebar-accent: 270 60% 14%;
+    --sidebar-accent-foreground: 277 100% 83%;
+    --sidebar-border: 270 50% 20%;
+    --sidebar-ring: 277 100% 74%;
   }
 }
 
