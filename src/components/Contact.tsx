@@ -71,9 +71,7 @@ export function Contact() {
             <form onSubmit={handleSubmit} className="space-y-8">
 
               <div>
-                <label htmlFor="email" className="block text-xs tracking-widest uppercase text-muted-foreground mb-3">
-                  Почта
-                </label>
+
                 <input
                   type="email"
                   id="email"
