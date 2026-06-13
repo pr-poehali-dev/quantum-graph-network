@@ -23,59 +23,54 @@ export function Philosophy() {
 
   return (
     <section ref={sectionRef} id="philosophy" className="py-32 lg:py-40 px-6 lg:px-12">
-      <div className="max-w-7xl mx-auto">
-        <div className="grid lg:grid-cols-2 gap-16 lg:gap-24 items-center">
-          {/* Content */}
-          <div className="lg:pl-8">
-            <p
-              className={`text-xs tracking-[0.3em] uppercase text-terracotta mb-6 transition-all duration-1000 delay-200 ${
-                isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
-              }`}
-            >
-              Об эксперте
-            </p>
+      <div className="max-w-4xl mx-auto text-center">
+        <p
+          className={`text-xs tracking-[0.3em] uppercase text-terracotta mb-6 transition-all duration-1000 delay-200 ${
+            isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
+          }`}
+        >
+          Об эксперте
+        </p>
 
-            <h2
-              className={`font-serif text-4xl md:text-5xl lg:text-6xl font-light leading-[1.1] text-foreground mb-8 text-balance transition-all duration-1000 delay-300 ${
-                isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
-              }`}
-            >
-              Диагноз, а не
-              <span className="italic"> советы</span>
-            </h2>
+        <h2
+          className={`font-serif text-4xl md:text-5xl lg:text-6xl font-light leading-[1.1] text-foreground mb-10 text-balance transition-all duration-1000 delay-300 ${
+            isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
+          }`}
+        >
+          Диагноз, а не
+          <span className="italic"> советы</span>
+        </h2>
 
-            <div
-              className={`space-y-6 text-muted-foreground leading-relaxed transition-all duration-1000 delay-500 ${
-                isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
-              }`}
-            >
-              <p>
-                6 лет в крупном EdTech — сотни отсмотренных курсов, десятки точек потерь, которые повторяются снова и снова. Я знаю, где студенты уходят и почему продажи не растут.
-              </p>
-              <p>
-                ChatGPT даст усреднённые советы. Я отдаю <em className="text-foreground">конкретный диагноз</em> по вашим материалам: главная причина проблемы, 3–5 исправлений по приоритетам и чёткий план — что чинить первым.
-              </p>
-            </div>
+        <div
+          className={`space-y-6 text-muted-foreground leading-relaxed max-w-2xl mx-auto transition-all duration-1000 delay-500 ${
+            isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
+          }`}
+        >
+          <p>
+            6 лет в крупном EdTech — сотни отсмотренных курсов, десятки точек потерь, которые повторяются снова и снова. Я знаю, где студенты уходят и почему продажи не растут.
+          </p>
+          <p>
+            ChatGPT даст усреднённые советы. Я отдаю <em className="text-foreground">конкретный диагноз</em> по вашим материалам: главная причина проблемы, 3–5 исправлений по приоритетам и чёткий план — что чинить первым.
+          </p>
+        </div>
 
-            {/* Stats */}
-            <div
-              className={`grid grid-cols-3 gap-8 mt-12 pt-12 border-t border-border transition-all duration-1000 delay-700 ${
-                isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
-              }`}
-            >
-              <div>
-                <p className="font-serif text-3xl md:text-4xl text-sage">6</p>
-                <p className="text-xs tracking-widest uppercase text-muted-foreground mt-2">Лет в EdTech</p>
-              </div>
-              <div>
-                <p className="font-serif text-3xl md:text-4xl text-sage">+10</p>
-                <p className="text-xs tracking-widest uppercase text-muted-foreground mt-2">п.п. к удержанию</p>
-              </div>
-              <div>
-                <p className="font-serif text-3xl md:text-4xl text-sage">−80%</p>
-                <p className="text-xs tracking-widest uppercase text-muted-foreground mt-2">Негативных отзывов</p>
-              </div>
-            </div>
+        {/* Stats */}
+        <div
+          className={`grid grid-cols-3 gap-8 mt-16 pt-16 border-t border-border transition-all duration-1000 delay-700 ${
+            isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
+          }`}
+        >
+          <div>
+            <p className="font-serif text-4xl md:text-5xl text-sage">6</p>
+            <p className="text-xs tracking-widest uppercase text-muted-foreground mt-3">Лет в EdTech</p>
+          </div>
+          <div>
+            <p className="font-serif text-4xl md:text-5xl text-sage">+10</p>
+            <p className="text-xs tracking-widest uppercase text-muted-foreground mt-3">п.п. к удержанию</p>
+          </div>
+          <div>
+            <p className="font-serif text-4xl md:text-5xl text-sage">−80%</p>
+            <p className="text-xs tracking-widest uppercase text-muted-foreground mt-3">Негативных отзывов</p>
           </div>
         </div>
       </div>
