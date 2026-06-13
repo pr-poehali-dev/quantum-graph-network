@@ -1,8 +1,28 @@
 import { useEffect, useRef, useState } from "react"
 
+function useCounter(target: number, duration: number, started: boolean) {
+  const [value, setValue] = useState(0)
+  useEffect(() => {
+    if (!started) return
+    const start = performance.now()
+    const step = (now: number) => {
+      const progress = Math.min((now - start) / duration, 1)
+      const eased = 1 - Math.pow(1 - progress, 3)
+      setValue(Math.round(eased * target))
+      if (progress < 1) requestAnimationFrame(step)
+    }
+    requestAnimationFrame(step)
+  }, [started, target, duration])
+  return value
+}
+
 export function Philosophy() {
   const [isVisible, setIsVisible] = useState(false)
   const sectionRef = useRef<HTMLElement>(null)
+
+  const count6 = useCounter(6, 1200, isVisible)
+  const count10 = useCounter(10, 1400, isVisible)
+  const count80 = useCounter(80, 1600, isVisible)
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -63,15 +83,15 @@ export function Philosophy() {
           }`}
         >
           <div>
-            <p className="font-serif text-4xl md:text-5xl text-sage">6</p>
+            <p className="font-serif text-4xl md:text-5xl text-sage">{count6}</p>
             <p className="text-xs tracking-widest uppercase text-muted-foreground mt-3">Лет в EdTech</p>
           </div>
           <div>
-            <p className="font-serif text-4xl md:text-5xl text-sage">+10</p>
+            <p className="font-serif text-4xl md:text-5xl text-sage">+{count10}</p>
             <p className="text-xs tracking-widest uppercase text-muted-foreground mt-3">п.п. к удержанию</p>
           </div>
           <div>
-            <p className="font-serif text-4xl md:text-5xl text-sage">−80%</p>
+            <p className="font-serif text-4xl md:text-5xl text-sage">−{count80}%</p>
             <p className="text-xs tracking-widest uppercase text-muted-foreground mt-3">Негативных отзывов</p>
           </div>
         </div>

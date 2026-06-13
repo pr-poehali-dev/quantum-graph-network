@@ -14,31 +14,31 @@ export function Header() {
           <div className="hidden md:flex items-center gap-12">
             <a
               href="#philosophy"
-              className="text-sm tracking-widest uppercase text-muted-foreground hover:text-foreground transition-colors duration-500"
+              className="relative text-sm tracking-widest uppercase text-muted-foreground hover:text-foreground transition-colors duration-500 after:absolute after:bottom-0 after:left-0 after:h-px after:w-0 after:bg-sage after:transition-all after:duration-500 hover:after:w-full"
             >
               Об эксперте
             </a>
             <a
               href="#for-whom"
-              className="text-sm tracking-widest uppercase text-muted-foreground hover:text-foreground transition-colors duration-500"
+              className="relative text-sm tracking-widest uppercase text-muted-foreground hover:text-foreground transition-colors duration-500 after:absolute after:bottom-0 after:left-0 after:h-px after:w-0 after:bg-sage after:transition-all after:duration-500 hover:after:w-full"
             >
               Для кого
             </a>
             <a
               href="#services"
-              className="text-sm tracking-widest uppercase text-muted-foreground hover:text-foreground transition-colors duration-500"
+              className="relative text-sm tracking-widest uppercase text-muted-foreground hover:text-foreground transition-colors duration-500 after:absolute after:bottom-0 after:left-0 after:h-px after:w-0 after:bg-sage after:transition-all after:duration-500 hover:after:w-full"
             >
               Услуги
             </a>
             <a
               href="#process"
-              className="text-sm tracking-widest uppercase text-muted-foreground hover:text-foreground transition-colors duration-500"
+              className="relative text-sm tracking-widest uppercase text-muted-foreground hover:text-foreground transition-colors duration-500 after:absolute after:bottom-0 after:left-0 after:h-px after:w-0 after:bg-sage after:transition-all after:duration-500 hover:after:w-full"
             >
               Как это работает
             </a>
             <a
               href="#contact"
-              className="text-sm tracking-widest uppercase text-muted-foreground hover:text-foreground transition-colors duration-500"
+              className="relative text-sm tracking-widest uppercase text-muted-foreground hover:text-foreground transition-colors duration-500 after:absolute after:bottom-0 after:left-0 after:h-px after:w-0 after:bg-sage after:transition-all after:duration-500 hover:after:w-full"
             >
               Записаться
             </a>

@@ -12,6 +12,10 @@ export function Hero() {
       {/* Subtle background texture */}
       <div className="absolute inset-0 bg-gradient-to-b from-background via-sand/30 to-background" />
 
+      {/* Floating blobs */}
+      <div className="absolute top-1/4 left-1/4 w-96 h-96 rounded-full bg-sage/5 blur-3xl animate-[float_8s_ease-in-out_infinite]" />
+      <div className="absolute bottom-1/4 right-1/4 w-80 h-80 rounded-full bg-terracotta/5 blur-3xl animate-[float_10s_ease-in-out_infinite_reverse]" />
+
       <div className="relative z-10 max-w-5xl mx-auto text-center">
         {/* Overline */}
         <p
