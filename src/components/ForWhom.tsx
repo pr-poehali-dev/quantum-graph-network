@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from "react"
 
 const audiences = [
   {
-    title: "Эксперты",
+    title: "Экспертам",
     description: "Записали курс, но студенты бросают на середине или оставляют плохие отзывы.",
   },
   {
