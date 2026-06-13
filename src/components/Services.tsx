@@ -105,7 +105,15 @@ export function Services() {
               </div>
               <h3 className="font-serif text-2xl md:text-3xl text-foreground mb-2">{service.title}</h3>
               <p className="text-terracotta text-sm tracking-widest uppercase mb-4">{service.price}</p>
-              <p className="text-muted-foreground leading-relaxed">{service.description}</p>
+              <p className="text-muted-foreground leading-relaxed mb-8">{service.description}</p>
+              <a
+                href="https://forms.yandex.ru/cloud/6a2d32314936396aa59fe9aa"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-auto inline-flex items-center gap-2 px-6 py-3 bg-sage text-primary-foreground text-xs tracking-widest uppercase hover:bg-sage/90 transition-all duration-500 self-start"
+              >
+                Записаться
+              </a>
             </div>
           ))}
         </div>
