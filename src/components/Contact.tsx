@@ -59,8 +59,10 @@ export function Contact() {
             }`}
           >
             <form className="space-y-8">
-              <button
-                type="submit"
+              <a
+                href="https://forms.yandex.ru/cloud/6a2d32314936396aa59fe9aa"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="group inline-flex items-center gap-3 px-8 py-4 bg-sage text-primary-foreground text-sm tracking-widest uppercase hover:bg-sage/90 transition-all duration-500"
               >
                 Записаться на разбор — 15 000 ₽
@@ -72,7 +74,7 @@ export function Contact() {
                 >
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M17 8l4 4m0 0l-4 4m4-4H3" />
                 </svg>
-              </button>
+              </a>
             </form>
           </div>
         </div>
