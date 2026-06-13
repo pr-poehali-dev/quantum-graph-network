@@ -37,7 +37,7 @@ export function ForWhom() {
   }, [])
 
   return (
-    <section ref={sectionRef} className="py-32 lg:py-40 px-6 lg:px-12">
+    <section ref={sectionRef} id="for-whom" className="py-32 lg:py-40 px-6 lg:px-12">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="max-w-2xl mb-20">

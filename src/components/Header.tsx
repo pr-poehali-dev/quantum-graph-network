@@ -19,6 +19,12 @@ export function Header() {
               Об эксперте
             </a>
             <a
+              href="#for-whom"
+              className="text-sm tracking-widest uppercase text-muted-foreground hover:text-foreground transition-colors duration-500"
+            >
+              Для кого
+            </a>
+            <a
               href="#services"
               className="text-sm tracking-widest uppercase text-muted-foreground hover:text-foreground transition-colors duration-500"
             >
@@ -67,6 +73,13 @@ export function Header() {
               className="text-sm tracking-widest uppercase text-muted-foreground hover:text-foreground transition-colors"
             >
               Об эксперте
+            </a>
+            <a
+              href="#for-whom"
+              onClick={() => setIsMenuOpen(false)}
+              className="text-sm tracking-widest uppercase text-muted-foreground hover:text-foreground transition-colors"
+            >
+              Для кого
             </a>
             <a
               href="#services"
