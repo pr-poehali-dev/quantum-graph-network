@@ -35,9 +35,8 @@ export function Hero() {
           className={`text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed mb-12 transition-all duration-1000 delay-700 ${
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
           }`}
-        >
-          За 60 минут я скажу почему. Разбор с экспертом, который 6 лет чинил курсы в крупном EdTech: +10 п.п. к удержанию студентов, −80% негативных отзывов.
-        </p>
+        >За 60 минут я скажу почему. 
+Разбор с экспертом, который 6 лет чинил курсы в крупном EdTech</p>
 
         {/* CTA */}
         <div
