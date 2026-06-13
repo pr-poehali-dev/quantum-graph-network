@@ -91,11 +91,11 @@ export function Services() {
         </div>
 
         {/* Services Grid */}
-        <div className="grid md:grid-cols-2 gap-px bg-border">
+        <div className="grid md:grid-cols-3 gap-px bg-border">
           {services.map((service, index) => (
             <div
               key={service.title}
-              className={`group bg-background p-10 lg:p-14 transition-all duration-1000 hover:bg-card ${
+              className={`group bg-background p-10 lg:p-12 flex flex-col transition-all duration-1000 hover:bg-card ${
                 isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
               }`}
               style={{ transitionDelay: `${300 + index * 150}ms` }}
