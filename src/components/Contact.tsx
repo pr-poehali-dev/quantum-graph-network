@@ -60,25 +60,7 @@ export function Contact() {
               Оставьте заявку — я напишу в течение дня и уточню удобное время. Доступно 4 слота разборов в неделю.
             </p>
 
-            {/* Key Info */}
-            <div
-              className={`space-y-6 transition-all duration-1000 delay-400 ${
-                isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
-              }`}
-            >
-              <div>
-                <p className="text-xs tracking-widest uppercase text-muted-foreground mb-2">Стоимость</p>
-                <p className="text-foreground text-lg font-serif">15 000 ₽ · фиксированная цена</p>
-              </div>
-              <div>
-                <p className="text-xs tracking-widest uppercase text-muted-foreground mb-2">Срок</p>
-                <p className="text-foreground">Результат через 1–2 рабочих дня</p>
-              </div>
-              <div>
-                <p className="text-xs tracking-widest uppercase text-muted-foreground mb-2">Гарантия</p>
-                <p className="text-foreground">Если за разбор не найду ничего ценного — верну деньги</p>
-              </div>
-            </div>
+
           </div>
 
           {/* Right Column - Form */}
