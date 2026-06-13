@@ -32,7 +32,7 @@ export function Philosophy() {
             }`}
           >
             <img
-              src="/minimalist-japanese-interior-design-with-natural-w.jpg"
+              src="https://cdn.poehali.dev/projects/05aca5c4-9ec7-4e2f-a6c6-fa0a0d56dda8/files/2128b7f5-0f1a-4779-9918-542e81fe8be9.jpg"
               alt="Эксперт по онлайн-курсам"
               className="absolute inset-0 w-full h-full object-cover"
             />
