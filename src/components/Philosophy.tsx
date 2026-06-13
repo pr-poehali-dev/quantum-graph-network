@@ -48,11 +48,12 @@ export function Philosophy() {
         >
           <p>6 лет в крупном EdTech — множество отсмотренных курсов, десятки точек потерь, которые повторяются снова и снова. 
 Знаю, где студенты уходят и почему продажи не растут.</p>
-          <p>ChatGPT даст усреднённые советы. 
-Я отдаю конкретный диагноз по вашим материалам: 
-- главная причина проблемы, 
-- 3–5 исправлений по приоритетам 
-- и чёткий план — что чинить первым.</p>
+          <p>ChatGPT даст усреднённые советы. Я отдаю конкретный диагноз по вашим материалам:</p>
+          <ul className="space-y-2 list-none">
+            <li className="flex items-start gap-3"><span className="mt-2 w-1.5 h-1.5 rounded-full bg-terracotta shrink-0" />главная причина проблемы</li>
+            <li className="flex items-start gap-3"><span className="mt-2 w-1.5 h-1.5 rounded-full bg-terracotta shrink-0" />3–5 исправлений по приоритетам</li>
+            <li className="flex items-start gap-3"><span className="mt-2 w-1.5 h-1.5 rounded-full bg-terracotta shrink-0" />чёткий план — что чинить первым</li>
+          </ul>
         </div>
 
         {/* Stats */}
