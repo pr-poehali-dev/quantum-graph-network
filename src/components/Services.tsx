@@ -91,7 +91,7 @@ export function Services() {
         </div>
 
         {/* Services Grid */}
-        <div className="grid md:grid-cols-3 gap-px bg-border">
+        <div className="grid md:grid-cols-3 gap-6">
           {services.map((service, index) => (
             <div
               key={service.title}
