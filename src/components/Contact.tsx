@@ -4,7 +4,6 @@ import { useEffect, useRef, useState } from "react"
 export function Contact() {
   const [isVisible, setIsVisible] = useState(false)
   const [formState, setFormState] = useState({
-    email: "",
     message: "",
   })
   const sectionRef = useRef<HTMLElement>(null)
@@ -70,18 +69,7 @@ export function Contact() {
           >
             <form onSubmit={handleSubmit} className="space-y-8">
 
-              <div>
 
-                <input
-                  type="email"
-                  id="email"
-                  value={formState.email}
-                  onChange={(e) => setFormState({ ...formState, email: e.target.value })}
-                  className="w-full bg-transparent border-b border-border py-3 text-foreground placeholder:text-muted-foreground/50 focus:border-sage focus:outline-none transition-colors"
-                  placeholder="ваш@email.com"
-                  required
-                />
-              </div>
               <div>
                 <label htmlFor="message" className="block text-xs tracking-widest uppercase text-muted-foreground mb-3">
                   Расскажите о курсе
