@@ -71,9 +71,7 @@ export function Contact() {
           >
             <form onSubmit={handleSubmit} className="space-y-8">
               <div>
-                <label htmlFor="name" className="block text-xs tracking-widest uppercase text-muted-foreground mb-3">
-                  Имя
-                </label>
+
                 <input
                   type="text"
                   id="name"
