@@ -95,7 +95,7 @@ export function Services() {
           {services.map((service, index) => (
             <div
               key={service.title}
-              className={`group bg-background p-10 lg:p-12 flex flex-col transition-all duration-500 hover:bg-card hover:-translate-y-2 hover:shadow-lg ${
+              className={`group bg-background p-10 lg:p-12 flex flex-col transition-all duration-500 hover:bg-card hover:-translate-y-2 hover:shadow-lg rounded-2xl ${
                 isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
               }`}
               style={{ transitionDelay: `${300 + index * 150}ms` }}
@@ -110,7 +110,7 @@ export function Services() {
                 href="https://forms.yandex.ru/cloud/6a2d32314936396aa59fe9aa"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="mt-auto inline-flex items-center gap-2 px-6 py-3 bg-sage text-primary-foreground text-xs tracking-widest uppercase hover:bg-sage/90 transition-all duration-500 self-start"
+                className="mt-auto inline-flex items-center gap-2 px-6 py-3 bg-sage text-primary-foreground text-xs tracking-widest uppercase hover:bg-sage/90 transition-all duration-500 self-start rounded-xl"
               >
                 Записаться
               </a>
